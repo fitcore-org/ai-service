@@ -1,8 +1,9 @@
+import os
 from sqlmodel import create_engine, Session, SQLModel
 from typing import Annotated
 from fastapi import Depends
 
-db_url = "postgresql+psycopg2://analytics_user:analytics_pass@localhost:5433/analytics_db"
+db_url = os.getenv("ANALYTIC_DATABASE_URL", "postgresql+psycopg2://analytics_user:analytics_pass@localhost:5433/analytics_db")
 connect_args = {"check_same_thread": False}
 engine = create_engine(db_url, echo=False)
 

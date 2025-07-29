@@ -14,6 +14,7 @@ from database.db_connect import engine
 from model.models import Feedback, Word_Frequency, SentimentEnum
 
 import traceback
+import os
 
 # Download stopwords if not already downloaded
 try:
@@ -22,7 +23,8 @@ except LookupError:
     nltk.download('stopwords')
 
 # --- CONFIGURAÇÕES ---
-MODEL_PATH = 'ai_model/sentiment_model.joblib'
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "../ai_model/sentiment_model.joblib")
+MODEL_PATH = os.path.abspath(MODEL_PATH)
 
 class MLSentimentScheduler:
     def __init__(self):
