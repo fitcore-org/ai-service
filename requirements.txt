@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+nltk
+psycopg2-binary
+sqlalchemy
+sqlmodel
+asyncpg
+apscheduler
