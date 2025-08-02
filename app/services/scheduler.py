@@ -40,8 +40,32 @@ class MLSentimentScheduler:
         self.stopwords_pt = set(stopwords.words("portuguese"))
         self.stopwords_pt.update(['pra', 'pro', 'aqui', 'né', 'tá', 'vc', 'voce'])
 
+        # Stopwords específicas para o domínio de academia
+        self.domain_stopwords = {
+            'hoje', 'sempre', 'tão', 'aqui', 'lá', 'agora', 'antes', 'depois',
+            'bem', 'muito', 'bastante', 'pouco', 'mais', 'menos',
+            'bom', 'boa', 'ótimo', 'ótima', 'legal', 'ruim', 'mediana', 'excelente', 'péssimo',
+            'amo', 'adoro', 'gosto', 'gostei', 'adorável', 'incrível',
+            'tudo', 'coisa', 'alguém', 'nada', 'algo', 'tipo',
+            'vc', 'você', 'voce', 'gente', 'pra', 'pro', 'tá', 'né', 'eh', 'ah', 'ai',
+            'ser', 'estar', 'ficar', 'parece', 'tem', 'ter', 'foi', 'vai',
+            'ufa', 'kkk', 'rs', 'haha', 'eh', 'ah', 'hum', 'obrigado', 'valeu'
+        }
+
         # Inicializa o scheduler
         self.scheduler = AsyncIOScheduler()
+
+    def simple_stem(self, word: str) -> str:
+        # Corrigir plurais comuns com 'es' no final
+        if word.endswith('ões'):
+            return word[:-3] + 'ão'  # avaliações -> avaliação
+        elif word.endswith('ães'):
+            return word[:-3] + 'ão'  # refrigerações -> refrigeração
+        elif word.endswith('es') and len(word) > 4:
+            return word[:-2]         # Fallback simples que remove 'es' mas cuidado com casos irregulares
+        elif word.endswith('s') and len(word) > 4:
+            return word[:-1]        # instrutoras -> instrutora, equipamentos -> equipamento
+        return word
 
     def get_most_common_words(self, texts: List[str], top_n: int = 10) -> List[Tuple[str, int]]:
         """Extrai as words mais comuns usando Bag-of-Words."""
@@ -50,7 +74,10 @@ class MLSentimentScheduler:
         
         full_text = ' '.join(texts).lower()
         words = re.findall(r'\b[a-záàâãéèêíìîóòôõúùûç]{3,}\b', full_text)
-        filtered_words = [word for word in words if word not in self.stopwords_pt]
+        filtered_words = [
+            self.simple_stem(word) for word in words
+            if word not in self.stopwords_pt and word not in self.domain_stopwords
+        ]
         
         word_counts = Counter(filtered_words)
         return word_counts.most_common(top_n)
