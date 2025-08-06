@@ -1,6 +1,81 @@
+# Python cache
 __pycache__/
+*.py[cod]
+*$py.class
 *.pyc
 *.pyo
-*.log
+
+# Environments
 .env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE files
 .vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+*.md
+docs/
+
+# Tests
+tests/
+*_test.py
+test_*.py
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local development data
+data/
+datasets/
+*.db
+*.sqlite
+*.sqlite3
+
+# ML models (if large)
+*.model
+*.h5
+*.hdf5
+
+# Coverage reports
+htmlcov/
+.coverage
+.pytest_cache/
+
+# Local configuration
+.env.local
+.env.development
+.env.production
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log*
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore

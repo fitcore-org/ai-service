@@ -5,7 +5,7 @@ from database.db_connect import SessionDep
 from typing import Sequence
 
 def create_feedback_service(feedback_data: FeedbackCreate, session: SessionDep) -> Feedback:
-    feedback_obj = Feedback(text=feedback_data.text) # sentiment fica None
+    feedback_obj = Feedback(text=feedback_data.text) # sentiment fica no_analyzed
     session.add(feedback_obj)
     session.commit()
     session.refresh(feedback_obj)

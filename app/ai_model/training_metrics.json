@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.639344262295082,
+  "avg_confidence": 0.4600783616815978,
+  "min_confidence": 0.34201835622852533,
+  "max_confidence": 0.7173799547028976,
+  "total_samples": 301,
+  "train_samples": 240,
+  "test_samples": 61
+}
