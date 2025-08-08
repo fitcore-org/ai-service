@@ -7,53 +7,53 @@ def create_test_feedbacks():
     
     test_feedbacks = [
         # === FEEDBACKS POSITIVOS (15 feedbacks) ===
-        # Foco em instrutores, limpeza, equipamentos e ambiente
-        "Adorei o treino hoje! O instrutor foi super atencioso e motivador, fez toda a diferença.",
-        "A academia está sempre limpa e os equipamentos são novos. Excelente estrutura!",
-        "A aula de spinning foi incrível, muito divertida e com uma energia contagiante. Recomendo muito!",
-        "Melhor decisão que tomei foi treinar aqui. Ambiente agradável e professores excelentes.",
-        "O custo-benefício é ótimo. Aparelhos de qualidade e um preço justo pela estrutura que oferecem.",
-        "Parabéns pela manutenção, todos os aparelhos funcionando perfeitamente. Dá gosto de treinar assim.",
-        "A recepcionista foi muito simpática e me ajudou com minhas dúvidas. Ótimo atendimento desde a entrada.",
-        "Vestiário sempre limpo e organizado. É um detalhe que faz uma grande diferença na experiência.",
-        "Amo as aulas coletivas! São sempre animadas e os professores são fantásticos.",
-        "Estou vendo resultados incríveis no meu corpo. O acompanhamento dos instrutores é perfeito.",
-        "A playlist da academia hoje estava perfeita para treinar pesado! Som ambiente muito bom.",
-        "Mesmo em horário de pico, a academia é bem organizada. Vale a pena cada centavo.",
-        "Equipamentos modernos e bem cuidados. A variedade de halteres é excelente.",
-        "Uma das melhores academias que já frequentei. Limpeza, atendimento e estrutura impecáveis.",
-        "Muito satisfeito! O ambiente é acolhedor e os treinos são ótimos.",
+        # Palavras-chave: instrutor, professor, equipamento, aparelho, esteira, halter, musculacao, funcional, spinning, treino, academia, limpeza, atendimento
+        "Instrutor massa! Professor atencioso, treino motivador, equipamentos funcionando. Academia top!",
+        "Equipamentos novos, esteira show, aparelhos limpos. Limpeza impecavel, estrutura excelente!",
+        "Aula spinning incrivel! Professor energetico, musica animada. Funcional divertido, recomendo!",
+        "Melhor academia! Professores capacitados, instrutores motivadores, ambiente agradavel. Treino eficiente!",
+        "Custo beneficio otimo! Aparelhos qualidade, halteres variados, preco justo. Estrutura completa!",
+        "Manutencao perfeita! Equipamentos funcionando, aparelhos conservados. Treino prazeroso, academia organizada!",
+        "Atendimento excelente! Recepcionista simpatica, instrutores prestativos. Ajuda profissional, duvidas esclarecidas!",
+        "Vestiario limpo! Banheiro organizado, chuveiro funcionando. Limpeza detalhada, higiene impecavel!",
+        "Aulas coletivas fantasticas! Professores animados, funcional dinamico, spinning energico. Treinos variados!",
+        "Resultados visiveis! Acompanhamento instrutor, treino personalizado, evolucao corporal. Metodologia eficaz!",
+        "Som ambiente perfeito! Playlist motivadora, musica energetica. Treino pesado, concentracao total!",
+        "Academia organizada! Horario pico controlado, equipamentos disponiveis. Investimento válido!",
+        "Equipamentos modernos! Halteres completos, aparelhos atualizados. Variedade exercicios, tecnologia avancada!",
+        "Academia referencia! Limpeza padrao, atendimento profissional, estrutura diferenciada. Experiencia superior!",
+        "Ambiente acolhedor! Treinos eficazes, professores qualificados. Satisfacao total, academia recomendada!",
 
         # === FEEDBACKS NEGATIVOS (15 feedbacks) ===
-        # Foco em equipamentos quebrados, superlotação, limpeza e atendimento ruim
-        "Péssima experiência. A esteira estava quebrada de novo e o ar condicionado não funciona direito.",
-        "Horrível treinar à noite, impossível usar os aparelhos de tão lotado. Faltam equipamentos.",
-        "O professor de hoje parecia despreparado e mal deu atenção para os alunos. Fiquei decepcionado.",
-        "Vestiário muito sujo, com cheiro ruim. A limpeza deixa muito a desejar.",
-        "A mensalidade é muito cara para o que oferecem. Aparelhos velhos e precisa de manutenção urgente.",
-        "O instrutor foi grosso quando pedi ajuda com o exercício. Atendimento terrível.",
-        "Música ambiente muito alta e de mau gosto. Impossível se concentrar no treino.",
-        "Cancelei minha matrícula. A academia está sempre cheia e os equipamentos vivem ocupados.",
-        "O banheiro estava sem papel e com o chão molhado. Uma nojeira, qualidade péssima.",
-        "Ninguém para ajudar na área de musculação. Os instrutores ficam conversando e ignoram os alunos.",
-        "O ar condicionado está quebrado há semanas, treinar aqui se tornou insuportável e abafado.",
-        "Muito insatisfeito. Prometeram uma avaliação física que nunca aconteceu.",
-        "Aparelho de leg press quebrado há mais de um mês. Um descaso com os alunos.",
-        "A aula de Zumba foi desanimada, a professora parecia sem energia. Experiência ruim.",
-        "Preço alto para uma estrutura tão fraca e um atendimento tão ruim. Não recomendo.",
+        # Palavras-chave: quebrado, sujo, lotado, caro, ruim, defeito, problema, lento, barulhento
+        "Experiencia pessima! Esteira quebrada, ar condicionado defeituoso. Equipamentos ruins, manutencao inexistente!",
+        "Academia lotada! Aparelhos ocupados, equipamentos insuficientes. Treino impossivel, superlotacao terrivel!",
+        "Professor despreparado! Instrutor desatencioso, acompanhamento ruim. Decepcionante, orientacao inadequada!",
+        "Vestiario sujo! Banheiro fedorento, chao molhado. Limpeza pessima, higiene deploravel!",
+        "Mensalidade cara! Aparelhos velhos, equipamentos obsoletos. Manutencao deficiente, investimento desperdicado!",
+        "Instrutor grosseiro! Atendimento terrivel, ajuda negada. Exercicio mal orientado, experiencia horrivel!",
+        "Musica barulhenta! Som alto, playlist ruim. Concentracao impossivel, ambiente estressante!",
+        "Academia superlotada! Equipamentos sempre ocupados, aparelhos disputados. Matricula cancelada, experiencia frustrante!",
+        "Banheiro nojento! Papel inexistente, chao sujo. Qualidade pessima, higiene abandonada!",
+        "Instrutores ausentes! Musculacao desassistida, orientacao negada. Professores conversando, alunos ignorados!",
+        "Ar condicionado quebrado! Ambiente abafado, treino insuportavel. Manutencao atrasada, problema cronico!",
+        "Promessas falsas! Avaliacao fisica cancelada, acompanhamento inexistente. Insatisfacao total, servico deficiente!",
+        "Leg press quebrado! Aparelho defeituoso, manutencao atrasada. Descaso administracao, equipamento abandonado!",
+        "Aula desanimada! Professora desmotivada, zumba sem energia. Experiencia decepcionante, qualidade baixa!",
+        "Preco exorbitante! Estrutura fraca, atendimento deficiente. Academia superestimada, investimento ruim!",
 
         # === FEEDBACKS NEUTROS (10 feedbacks) ===
-        # Foco em observações factuais, sem forte carga emocional
-        "A academia é ok. Os equipamentos são um pouco antigos, mas a maioria funciona.",
-        "O treino hoje foi padrão, sem nada de excepcional. O movimento estava normal.",
-        "A quantidade de esteiras é razoável, mas poderia ter mais anilhas de 5kg.",
-        "O atendimento na recepção foi básico, apenas o necessário. Preço na média do bairro.",
-        "A aula de funcional estava bem puxada hoje. A sala estava com bastante gente.",
-        "A estrutura é mediana. Não é ruim, mas também não tem grandes diferenciais.",
-        "A academia cumpre o que promete, mas sem surpresas. É uma experiência comum.",
-        "O ar condicionado estava funcionando bem na área de cárdio. O restante estava normal.",
-        "O valor da mensalidade é compatível com academias do mesmo porte na região.",
-        "O horário de funcionamento é bom. O fluxo de pessoas varia bastante durante o dia."
+        # Palavras-chave: regular, medio, comum, basico, padrao, razoavel
+        "Academia regular. Equipamentos antigos funcionando, estrutura basica. Experiencia comum, nada excepcional.",
+        "Treino padrao. Movimento normal, fluxo regular. Equipamentos funcionais, experiencia mediana.",
+        "Esteiras razoaveis. Anilhas suficientes, aparelhos funcionando. Quantidade adequada, variedade basica.",
+        "Atendimento basico. Recepcao funcional, orientacao minima. Preco medio, servico padrao.",
+        "Funcional regular. Sala adequada, movimento controlado. Aula comum, intensidade media.",
+        "Estrutura mediana. Equipamentos funcionais, manutencao regular. Diferenciais limitados, academia comum.",
+        "Servico padrao. Promessas cumpridas, experiencia previsivel. Academia regular, surpresas inexistentes.",
+        "Ar condicionado funcionando. Area cardio adequada, temperatura controlada. Condicoes normais, ambiente regular.",
+        "Mensalidade compativel. Preco medio, custo regional. Academias similares, valor adequado.",
+        "Horario adequado. Funcionamento regular, fluxo variavel. Frequencia normal, movimento controlado."
     ]
     
     with Session(engine) as session:
